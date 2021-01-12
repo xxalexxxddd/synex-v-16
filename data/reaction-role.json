@@ -1,0 +1,23 @@
+{
+    "name": "ReactionRole",
+    "temp": "",
+    "event-type": "1",
+    "_id": "BgarA",
+    "actions": [
+        {
+            "comment": "Commands: [p]rr and [p]rrdelete ",
+            "color": "#ff0000",
+            "name": "Comment"
+        },
+        {
+            "code": "/*\n\nHello everyone! PLEASE READ THIS BEFORE YOU CONTINUE! \n\nYou need to go to your project directory, locate the data folder, go inside of it, and right click -> new -> create a text document\n\nRename the text document to \"reaction-role.json\" (without the \"\")\n\nFill in all the other information below! \n\n*/\n\nconst ReactionRoleManager = require(\"discord-reaction-role\");\nconst manager = new ReactionRoleManager(client, {\n    storage: \"./reaction-role.json\"\n});\nclient.reactionRoleManager = manager;\n\nclient.on(\"message\", message => {\n    if(message.content == this.getDBM().Files.data.settings.tag + \"rr\") {\n        client.reactionRoleManager.create({\n      messageID: '734212354069495869', // put the message ID here\n      channel: message.channel, // either put the channel name in \"\" or leave it as message.channel for the current channel\n      reaction: '✅', // if it's a custom emoji format it like this: <a:thinkhfjkld:403727203864412161>\n      role: message.guild.roles.cache.get('734211968218693664') // put the role ID \n    });\n    }\n    });\n    \nclient.on(\"message\", message => {\n    if(message.content == this.getDBM().Files.data.settings.tag + \"rrdelete\") {\n        client.reactionRoleManager.delete({\n          messageID: \"734212354069495869\",\n          reaction: \"✅\",\n        });\n    }\n})\n\n",
+            "behavior": "0",
+            "interpretation": "1",
+            "storage": "0",
+            "varName": "",
+            "VTypeSelect": "0",
+            "CVTypeValue": "",
+            "name": "Run Script"
+        }
+    ]
+}
