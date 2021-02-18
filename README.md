@@ -1,2 +1,2 @@
 # synex bot
-# worst bot ever :)
+# worst bot ever cuz creator used DBM
