@@ -1,6 +1,6 @@
 {
   "name": "discord-bot-maker-bot",
-  "author": "Robert Borghese",
+  "author": "xxalexxxddd",
   "main": "bot.js",
   "scripts": {"start": "node bot.js"},
   "version": "1.6.10",
